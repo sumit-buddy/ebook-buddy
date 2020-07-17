@@ -28,6 +28,115 @@
     font-weight: normal;
     line-height: 24px;
   }
+  
+  .center {
+  				display:block;
+  				margin-left:auto;
+  				margin-right:auto;
+  				}
+  
+    
+/*----------------------------------------
+   about our team 
+   
+----------------------------*/
+
+
+
+
+.container{
+	max-width:1140px;
+	margin:auto;
+	position: relative;
+	min-height: 1px;
+}
+
+.team{
+	min-height: 20vh;
+	padding:60px 15px;
+	background-color:#ffffff; 
+	float: left;
+	width: 100%;
+}
+
+.team h1{
+	font-size: 36px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	color:#000000;
+	margin:0;
+	padding-bottom:60px;
+	text-align: center;
+}
+
+
+
+.team .card{
+	width:25%;
+	float: left;
+	padding:0px 15px;
+}
+.team .card .box {
+	padding:15px;
+	background-color: #2d3035;
+	border-radius:5px;
+	transition: margin 1s ease,box-shadow 1s ease;
+}
+.team .card .box:hover{
+	margin-top:-15px;
+	box-shadow:0px 0px 40px black;
+}
+.team .card .box img{
+	width:150px;
+	display: block;
+	margin:10px auto;
+	border-radius:50%;
+
+}
+
+.team .card .box h4{
+	font-size: 20px;
+	font-family: open sans;
+	margin:20px 0px 10px;
+	color:#ea5e71;
+	text-align: center;
+	font-weight: 700;
+}
+
+.team .card .box h5{
+	font-size:16px;
+	font-family: open sans;
+	font-weight: 600;
+	color:#b9b9b9;
+	margin:0px 0px 15px;
+	text-align: center;
+}
+.team .card .box p{
+	color:#b9b9b9;
+	font-size: 15px;
+	font-family: open sans;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: center;
+	padding:0px 20px;
+}
+
+
+
+/*responsive*/
+
+@media(max-width: 991px){
+	.team .card{
+		width:50%;
+		margin-bottom:30px;
+	}
+}
+
+@media(max-width:550px){
+	.team .card{
+		width:100%;
+	}
+}
 
 
 
@@ -299,7 +408,7 @@
   -----------------------------------------*/
 
   #home {
-    background: url('../images/home-bg.jpg') no-repeat center center;
+    background: url('') no-repeat center center;
     background-size: cover;
     vertical-align: middle;
     display: -webkit-box;
@@ -389,196 +498,55 @@
     margin: 0 0 5px 0;
   }
 
-  .feature-image {
-    position: absolute;
-    bottom: -27em;
-  }
+  
 
 
 
   /*---------------------------------------
-      ABOUT              
-  -----------------------------------------*/
-
-  #about .col-md-4 {
-    margin: 0;
-    padding: 0;
-  }
-
-  .team-thumb {
-    background: #ffffff;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .team-thumb-up:after {
-    display: block;
-    margin: 0 auto;
-    position: absolute;
-    top: -15px;
-    right: 0;
-    left: 0;
-    content: "";
-    width: 0;
-    height: 0;
-    border-right: 15px solid transparent;
-    border-left: 15px solid transparent;
-    border-bottom: 15px solid #ffffff;
-  }
-
-  .team-thumb-down:after {
-    display: block;
-    margin: 0 auto;
-    position: absolute;
-    bottom: -15px;
-    right: 0;
-    left: 0;
-    content: "";
-    width: 0;
-    height: 0;
-    border-right: 15px solid transparent;
-    border-left: 15px solid transparent;
-    border-top: 15px solid #ffffff;
-  }
-
-  .team-info {
-    position: relative;
-    padding: 40px;
-  }
-
-  .team-info h2 {margin: 0;}
-
-  .team-info small {
-    display: block;
-    font-size: 18px;
-    margin: 5px 0 10px 0;
-  }
-
-  .team-thumb img {
-    width: 100%;
-  }
-
-
-
-  /*---------------------------------------
-      TESTIMONIAL           
-  -----------------------------------------*/
-
-  #testimonial {
-    background: #ffffff;
-  }
-
-  #testimonial .col-md-6 {
-    margin: 0;
-    padding: 0;
-  }
-
-  #testimonial .section-title {
-    padding-bottom: 0;
-  }
-
-  #testimonial h1 {
-    color: #ffffff;
-  }
-
-  .testimonial-image {
-    background: url('../images/testimonial-image.jpg') no-repeat center center;
-    background-size: cover;
-    width: 100%;
-    height: 65vh;
-  }
-
-  .testimonial-info {
-    background: #202020;
-    padding: 60px;
-    height: 65vh;
-  }
-
-  .testimonial-info h3 {
-    color: #d9d9d9;
-    font-style: italic;
-    margin-top: 5px;
-  }
-
-  .testimonial-info .item {
-    display: block;
-    width: 100%;
-  }
-
-  .testimonial-item {
-    margin: 20px 0;
-  }
-
-  .owl-carousel .owl-item img,
-  .testimonial-item img,
-  .testimonial-item h4 {
-    color: #d9d9d9;
-    display: inline-block;
-    vertical-align: top;
-  }
-
-  .owl-carousel .owl-item img,
-  .testimonial-item img {
-    border: 3px solid #ffffff;
-    border-radius: 100px;
-    width: 60px;
-    height: 60px;
-    margin-right: 10px;
-  }
-
-
-
-  /*---------------------------------------
-      PRICING             
+     branding     
   -----------------------------------------*/
 
   #about .section-title,
-  #pricing .section-title {
+  #extra .section-title {
     text-align: center;
   }
 
-  #pricing .col-md-4 {
-    margin: 0;
-    padding: 0;
-  }
 
-  #pricing .col-md-4:last-child .pricing-thumb {
-    border-right: 0;
-  }
-
-  .pricing-thumb {
+  .brand-thumb {
     background: #ffffff;
     border-right: 2px solid #f0f0f0;
     padding: 20px 40px;
   }
 
-  .pricing-title {
+  .brand-title {
     padding-bottom: 5px;
   }
 
-  .pricing-info {
+  .brand-info {
     border-top: 2px solid #f0f0f0;
     border-bottom: 2px solid #f0f0f0;
   }
 
-  .pricing-info,
-  .pricing-bottom {
+  .brand-info,
+  .brand-bottom {
     padding: 20px 0;
   }
 
-  .pricing-info p {
+  .brand-info p {
     font-size: 16px;
   }
 
-  .pricing-bottom {
+  .brand-bottom {
     position: relative;
   }
-
-  .pricing-bottom span {
+  
+  
+  .brand-bottom span {
     font-size: 20px;
   }
 
-  .pricing-btn {
+
+  .brand-btn {
     position: absolute;
     top: 15px;
     right: 0;
@@ -713,11 +681,8 @@
       margin-right: 20px;
     }
 
-    .feature-image {
-      bottom: -24em;
-    }
 
-    .pricing-thumb {
+    .brand-thumb {
       margin-bottom: 30px;
     }
 
@@ -758,11 +723,6 @@
       color: #656565;
     }
 
-    .feature-image {
-      position: relative;
-      bottom: 0;
-    }
-
     #about .col-md-4:nth-child(3n) .team-thumb {
       display: flex;
       -webkit-box-orient: vertical;
@@ -778,14 +738,6 @@
       border-bottom: 15px solid #ffffff;
     }
 
-    .testimonial-image,
-    .testimonial-info {
-      height: 85vh;
-    }
-
-    .testimonial-info {
-      padding: 30px;
-    }
   }
 
 
@@ -806,8 +758,5 @@
       right: 0;
     }
 
-    .testimonial-image,
-    .testimonial-info {
-      height: 65vh;
-    }
+    
   }

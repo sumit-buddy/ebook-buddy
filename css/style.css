@@ -70,22 +70,25 @@
 }
 
 
-
 .team .card{
 	width:25%;
 	float: left;
 	padding:0px 15px;
 }
+
+
 .team .card .box {
 	padding:15px;
-	background-color: #2d3035;
+	background-color:#F3F6F6F6;
 	border-radius:5px;
 	transition: margin 1s ease,box-shadow 1s ease;
 }
+
 .team .card .box:hover{
 	margin-top:-15px;
 	box-shadow:0px 0px 40px black;
 }
+
 .team .card .box img{
 	width:150px;
 	display: block;
@@ -98,21 +101,21 @@
 	font-size: 20px;
 	font-family: open sans;
 	margin:20px 0px 10px;
-	color:#ea5e71;
+	color:#29ca8e;
 	text-align: center;
-	font-weight: 700;
+	font-weight: 500;
 }
 
 .team .card .box h5{
 	font-size:16px;
 	font-family: open sans;
-	font-weight: 600;
-	color:#b9b9b9;
+	font-weight: 500;
+	color:#000000;
 	margin:0px 0px 15px;
 	text-align: center;
 }
 .team .card .box p{
-	color:#b9b9b9;
+	color:#000000;
 	font-size: 15px;
 	font-family: open sans;
 	font-weight: 400;

@@ -582,7 +582,7 @@ marquee{
 <div class="row">
 
 <div class="col-md-offset-1 col-md-10 col-sm-12">
-<form id="contact-form" role="form" action="" method="get">
+<form id="contact-form" role="form" action="contact.php" method="post">
   
 <div class="section-title">
 <h1>Say hello to us</h1>
@@ -593,16 +593,18 @@ marquee{
 </div>
                               
 <div class="col-md-4 col-sm-4">
-<input type="email" class="form-control" placeholder="Email address" name="email" required>
-</div>
-
-<div class="col-md-4 col-sm-4">
-<input type="submit" class="form-control" name="send message" value="Send Message">
+<input type="email" class="form-control" placeholder="Your email" name="email" required>
 </div>
 
 <div class="col-md-12 col-sm-12">
                                    <textarea class="form-control" rows="8" placeholder="Your message" name="message" required></textarea>
 </div>
+
+<div class="col-md-4 col-sm-4">
+<input type="submit" class="form-control" name="submit" value="Send Message">
+</div>
+
+
 </form>
 </div>
 
